@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include <conio.h>
+using namespace std;
+intmain ()
+{
+int
+a[12]={7,9,11,13,23,27,28,37,41,47,53,57};
+int i,count,n,l,r,n
+count=12;
+for(i=0,i<count,i++)
+{
+}
+cout<<"Enter the number you want to search:";
+cin>>n;
+l=0;
+r=count-1;
+m=(l+r)/2;
+while(l<=r)
+{
+if(a[m]<n)
+{
+l=m+1;
+}
+elseif(a[m]==n)
+{
+cout<<n<<"found the array in the location"<<m<<"\n";
+break;
+}
+else {
+r=m-1;
+}
+m=(l+r)/2;
+}
+if(l>r)
+{
+cout<<n<<"Not found in the array";
+}
+return 0;
+}
